@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style.css?ver=1.0.0">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans:300,400,700" rel="stylesheet">
 	<title>RESUME</title>
 </head>
@@ -11,7 +11,38 @@
 	<script src="bundle.js"></script>
 	<script>
     //удаление рекламы хостинга после футера
-    document.body.querySelector('.cbalink').remove();
-  	</script>
+    if (document.body.querySelector('.cbalink'))
+    	document.body.querySelector('.cbalink').remove();
+    //
+function Clicker(argument) {
+
+    argument.onclick = function(event) {
+      var target = event.target;
+
+      while (target != this) {
+        if (target.tagName == 'INPUT') {
+          chekSize(target);
+          return;
+        }
+        target = target.parentNode;
+      }
+    }
+
+    function chekSize(e) {
+        var elem = e.parentElement.children
+    	
+        if (elem[3].checked)
+    		elem[2].classList.remove('hide_size')
+    	else
+    		elem[2].classList.add('hide_size')
+    }
+}
+
+var mainBlock = document.getElementsByClassName('main__container');
+
+for (var i = 0; i < mainBlock.length; i++) {
+    Clicker(mainBlock[i])
+}
+  </script>
 </body>
 </html>
