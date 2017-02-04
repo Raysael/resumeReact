@@ -1,6 +1,6 @@
 import React from 'react';
 
-class ContentBlockSecond extends React.Component {
+class ContactBox extends React.Component {
 	render() {
 		let contactBoxWebsite = {icon: 'images/contactBoxWebsite.png', title: 'Skype:', info: 'jewelrykas'}
     let contactBoxPhone = {icon: 'images/contactBoxPhone.png', title: 'Mobile:', info: '+380636190055'}
@@ -9,9 +9,16 @@ class ContentBlockSecond extends React.Component {
 		let contactBoxs = [contactBoxWebsite, contactBoxPhone, contactBoxEmail]
 		
 		return (
-			<div className="contact-box main__contact-box">
-          <div className="contact-box__rope contact-box__rope_back"></div>
-          <div className="contact-box__bubble-wrapper">
+			<div className="contact-box_wrap">
+          <div className="contact-box main__contact-box">
+            <div className="contact-box__rope contact-box__rope_back"></div>
+            <div className="contact-box__bubble-wrapper"></div>
+            <div className="contact-box__circles-wrapper">
+              <div className="contact-box__circle contact-box__circle_top"></div>
+              <div className="contact-box__circle contact-box__circle_right"></div>
+              <div className="contact-box__circle contact-box__circle_bottom"></div>
+              <div className="contact-box__circle contact-box__circle_left"></div>
+            </div>
             <div className="contact-box__sphere">
               <div className="contact-box__hole"></div>
               <div className="contact-box__rope contact-box__rope_front"></div>
@@ -44,4 +51,4 @@ class ContentBlockSecond extends React.Component {
 	}
 }
 
-module.exports = ContentBlockSecond;
+module.exports = ContactBox;
