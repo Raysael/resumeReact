@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from './Header.js';
 import Main from './Main.js';
+import Footer from './Footer.js';
 
 class App extends React.Component {
 	render() {
@@ -9,9 +10,7 @@ class App extends React.Component {
 			<div className="wrapper">
 				<Header />
 				<Main />
-				<footer className="footer">
-        			<div className="footer__photo"></div>
-      			</footer>
+				<Footer />
 			</div>
 		)
 	}
