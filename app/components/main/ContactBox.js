@@ -4,9 +4,10 @@ class ContactBox extends React.Component {
 	render() {
 		let contactBoxWebsite = {icon: 'images/contactBoxWebsite.png', title: 'Skype:', info: 'jewelrykas'}
     let contactBoxPhone = {icon: 'images/contactBoxPhone.png', title: 'Mobile:', info: '+380636190055'}
+    let contactBoxGit = {icon: 'images/contactBoxGit.png', title: 'GitHub:', info: 'https://github.com/ZeilD'}
     let contactBoxEmail = {icon: 'images/contactBoxEmail.png', title: 'Email:', info: 'kasjewelfr@gmail.com'}
 
-		let contactBoxs = [contactBoxWebsite, contactBoxPhone, contactBoxEmail]
+		let contactBoxs = [contactBoxWebsite, contactBoxPhone, contactBoxGit, contactBoxEmail]
 		
 		return (
 			<div className="contact-box_wrap">
@@ -37,11 +38,18 @@ class ContactBox extends React.Component {
                   <p className="contact-box__phone">{contactBoxs[1].info}</p>
                 </div>
               </div>
-              <div className="contact-box__email-box">
+              <div className="contact-box__git-box">
                 <div className="contact-box__sphere_small"><img className="contact-box__icon" src={contactBoxs[2].icon} /></div>
                 <div className="contact-box__info">
                   <h4 className="contact-box__title">{contactBoxs[2].title}</h4>
-                  <p className="contact-box__email">{contactBoxs[2].info}</p>
+                  <p className="contact-box__git">{contactBoxs[2].info}</p>
+                </div>
+              </div>
+              <div className="contact-box__email-box">
+                <div className="contact-box__sphere_small"><img className="contact-box__icon" src={contactBoxs[3].icon} /></div>
+                <div className="contact-box__info">
+                  <h4 className="contact-box__title">{contactBoxs[3].title}</h4>
+                  <p className="contact-box__email">{contactBoxs[3].info}</p>
                 </div>
               </div>
             </div>
