@@ -22192,9 +22192,10 @@
 	    value: function render() {
 	      var contactBoxWebsite = { icon: 'images/contactBoxWebsite.png', title: 'Skype:', info: 'jewelrykas' };
 	      var contactBoxPhone = { icon: 'images/contactBoxPhone.png', title: 'Mobile:', info: '+380636190055' };
+	      var contactBoxGit = { icon: 'images/contactBoxGit.png', title: 'GitHub:', info: 'https://github.com/ZeilD' };
 	      var contactBoxEmail = { icon: 'images/contactBoxEmail.png', title: 'Email:', info: 'kasjewelfr@gmail.com' };
 
-	      var contactBoxs = [contactBoxWebsite, contactBoxPhone, contactBoxEmail];
+	      var contactBoxs = [contactBoxWebsite, contactBoxPhone, contactBoxGit, contactBoxEmail];
 
 	      return _react2.default.createElement(
 	        'div',
@@ -22270,7 +22271,7 @@
 	            ),
 	            _react2.default.createElement(
 	              'div',
-	              { className: 'contact-box__email-box' },
+	              { className: 'contact-box__git-box' },
 	              _react2.default.createElement(
 	                'div',
 	                { className: 'contact-box__sphere_small' },
@@ -22286,8 +22287,31 @@
 	                ),
 	                _react2.default.createElement(
 	                  'p',
-	                  { className: 'contact-box__email' },
+	                  { className: 'contact-box__git' },
 	                  contactBoxs[2].info
+	                )
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'contact-box__email-box' },
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'contact-box__sphere_small' },
+	                _react2.default.createElement('img', { className: 'contact-box__icon', src: contactBoxs[3].icon })
+	              ),
+	              _react2.default.createElement(
+	                'div',
+	                { className: 'contact-box__info' },
+	                _react2.default.createElement(
+	                  'h4',
+	                  { className: 'contact-box__title' },
+	                  contactBoxs[3].title
+	                ),
+	                _react2.default.createElement(
+	                  'p',
+	                  { className: 'contact-box__email' },
+	                  contactBoxs[3].info
 	                )
 	              )
 	            )
