@@ -1,7 +1,7 @@
 import React from 'react';
 
-class ContentMidle extends React.Component {
-	_getContentMidle(type) {
+class ContentBottom extends React.Component {
+	_getContentBottom(type) {
 		switch (type) {
 			case 'list':
 				return <div className="container__block container__block_lists">
@@ -28,11 +28,11 @@ class ContentMidle extends React.Component {
 		}
 	render() {
 		return(
-			<div className="container__block container__block_midle">
-	           {this._getContentMidle(this.props.type)}
+			<div className="container__block container__block_bottom hide_size">
+	           {this._getContentBottom(this.props.type)}
 	        </div>
 		)
 	}
 }
 
-module.exports = ContentMidle;
+module.exports = ContentBottom;
