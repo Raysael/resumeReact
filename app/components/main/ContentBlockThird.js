@@ -1,30 +1,22 @@
 import React from 'react';
+import ContentTop from './_contentTop.js';
+import ContentMidle from './_contentMidle.js';
 
 class ContentBlockThird extends React.Component {
 	render() {
 		let boxTop = {icon: 'images/arrow.png', iconBack: 'images/gear.svg', iconBack: 'images/gear.svg', titleBig: 'Responsibilities'}
-		let boxMidle = {list1: ['Develop usable websites based on web standards, flexibility and accessibility.', 'Use Avocode and Photoshop for website mockups.', 'Develop layout web applications with Pug and React.js.']}
+		let boxMidle = {type: 'list', arr: [['Develop usable websites based on web standards, flexibility and accessibility.', 'Use Avocode and Photoshop for website mockups.', 'Develop layout web applications with Pug and React.js.']]}
 		let boxBottom = {list1: ['Write simple plugins and animations in JavaScript.', 'Use BEM methodology for making source code more readable and understandable.']}
 
-		let content = [boxTop, boxMidle, boxBottom]
+		let content = [boxBottom]
 		
 		return (
 			<div className="container main__container container_third">
-          <div className="container__block container__block_top">
-            <div className="container__sphere">
-              <div className="container__icon_front"><img className="icon container__icon" src={content[0].icon} /></div>
-              <div className="container__icon_back"><img className="icon container__icon" src={content[0].iconBack} /></div>
-            </div>
-            <h1 className="container__title">{content[0].titleBig}</h1>
-          </div>
-          <div className="container__block container__block_midle container__block_lists">
-            <ul className="container__list">
-              {content[1].list1.map(item => <li className="list__item">{item}</li>)}
-            </ul>
-          </div>
+                {<ContentTop icon={boxTop.icon} iconBack={boxTop.iconBack} titleBig={boxTop.titleBig} />} 
+                {<ContentMidle arr={boxMidle.arr} type={boxMidle.type} />} 
           <div className="container__block container__block_bottom container__block_lists hide_size">
             <ul className="container__list">
-               {content[2].list1.map(item => <li className="list__item">{item}</li>)}
+               {content[0].list1.map((item, index) => <li key={index} className="list__item">{item}</li>)}
             </ul>
           </div>
           <input className="container-button__checkbox hide" type="checkbox" id="checkbox_3" />
