@@ -64,7 +64,7 @@
 
 	var _Main2 = _interopRequireDefault(_Main);
 
-	var _Footer = __webpack_require__(189);
+	var _Footer = __webpack_require__(193);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
@@ -21827,19 +21827,19 @@
 
 	var _ContentBlockFirst2 = _interopRequireDefault(_ContentBlockFirst);
 
-	var _ContentBlockSecond = __webpack_require__(185);
+	var _ContentBlockSecond = __webpack_require__(188);
 
 	var _ContentBlockSecond2 = _interopRequireDefault(_ContentBlockSecond);
 
-	var _ContactBox = __webpack_require__(186);
+	var _ContactBox = __webpack_require__(189);
 
 	var _ContactBox2 = _interopRequireDefault(_ContactBox);
 
-	var _ContentBlockThird = __webpack_require__(187);
+	var _ContentBlockThird = __webpack_require__(191);
 
 	var _ContentBlockThird2 = _interopRequireDefault(_ContentBlockThird);
 
-	var _ContentBlockFourth = __webpack_require__(188);
+	var _ContentBlockFourth = __webpack_require__(192);
 
 	var _ContentBlockFourth2 = _interopRequireDefault(_ContentBlockFourth);
 
@@ -21892,6 +21892,22 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _contentTop = __webpack_require__(185);
+
+	var _contentTop2 = _interopRequireDefault(_contentTop);
+
+	var _contentMidle = __webpack_require__(186);
+
+	var _contentMidle2 = _interopRequireDefault(_contentMidle);
+
+	var _contentBottom = __webpack_require__(187);
+
+	var _contentBottom2 = _interopRequireDefault(_contentBottom);
+
+	var _buttonReadMore = __webpack_require__(194);
+
+	var _buttonReadMore2 = _interopRequireDefault(_buttonReadMore);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -21901,137 +21917,36 @@
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var ContentBlockFirst = function (_React$Component) {
-	  _inherits(ContentBlockFirst, _React$Component);
+		_inherits(ContentBlockFirst, _React$Component);
 
-	  function ContentBlockFirst() {
-	    _classCallCheck(this, ContentBlockFirst);
+		function ContentBlockFirst() {
+			_classCallCheck(this, ContentBlockFirst);
 
-	    return _possibleConstructorReturn(this, (ContentBlockFirst.__proto__ || Object.getPrototypeOf(ContentBlockFirst)).apply(this, arguments));
-	  }
+			return _possibleConstructorReturn(this, (ContentBlockFirst.__proto__ || Object.getPrototypeOf(ContentBlockFirst)).apply(this, arguments));
+		}
 
-	  _createClass(ContentBlockFirst, [{
-	    key: 'render',
-	    value: function render() {
-	      var boxTop = { icon: 'images/arrow.png', iconBack: 'images/gear.svg', titleBig: 'skills' };
-	      var boxMidle = { list1: ['HTML5/CSS3', 'Javascript', 'JQuery', 'ReactJS'], list2: ['Sass/Scss', 'Pug', 'Gulp/Webpack', 'GitHub'] };
-	      var boxBottom = { list1: ['Bootstrap', 'Wordpress', 'Avocode', 'Photoshop'], list2: ['OOP JS', 'Ajax request', 'API', 'BEM'] };
+		_createClass(ContentBlockFirst, [{
+			key: 'render',
+			value: function render() {
+				var boxTop = { icon: 'images/arrow.png', iconBack: 'images/gear.svg', titleBig: 'skills' };
+				var boxMidle = { type: 'list', arr: [['HTML5/CSS3', 'Javascript', 'JQuery', 'ReactJS'], ['Sass/Scss', 'Pug', 'Gulp/Webpack', 'GitHub']] };
+				var boxBottom = { type: 'list', arr: [['Bootstrap', 'Wordpress', 'Avocode', 'Photoshop'], ['OOP JS', 'Ajax request', 'API', 'BEM']] };
 
-	      var content = [boxTop, boxMidle, boxBottom];
+				var content = [];
 
-	      return _react2.default.createElement(
-	        'div',
-	        { className: 'container main__container container_first' },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'container__block container__block_top' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'container__sphere' },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'container__icon_front' },
-	              _react2.default.createElement('img', { className: 'icon container__icon', src: content[0].icon })
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'container__icon_back' },
-	              _react2.default.createElement('img', { className: 'icon container__icon', src: content[0].iconBack })
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'h1',
-	            { className: 'container__title' },
-	            content[0].titleBig
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'container__block container__block_midle container__block_lists' },
-	          _react2.default.createElement(
-	            'ul',
-	            { className: 'container__list' },
-	            content[1].list1.map(function (item) {
-	              return _react2.default.createElement(
-	                'li',
-	                { className: 'list__item' },
-	                item
-	              );
-	            })
-	          ),
-	          _react2.default.createElement(
-	            'ul',
-	            { className: 'container__list' },
-	            content[1].list2.map(function (item) {
-	              return _react2.default.createElement(
-	                'li',
-	                { className: 'list__item' },
-	                item
-	              );
-	            })
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'container__block container__block_bottom container__block_lists hide_size' },
-	          _react2.default.createElement(
-	            'ul',
-	            { className: 'container__list' },
-	            content[2].list1.map(function (item) {
-	              return _react2.default.createElement(
-	                'li',
-	                { className: 'list__item' },
-	                item
-	              );
-	            })
-	          ),
-	          _react2.default.createElement(
-	            'ul',
-	            { className: 'container__list' },
-	            content[2].list2.map(function (item) {
-	              return _react2.default.createElement(
-	                'li',
-	                { className: 'list__item' },
-	                item
-	              );
-	            })
-	          )
-	        ),
-	        _react2.default.createElement('input', { className: 'container-button__checkbox hide', type: 'checkbox', id: 'checkbox_1' }),
-	        _react2.default.createElement(
-	          'label',
-	          { htmlFor: 'checkbox_1' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'container-button' },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'container-button__sides' },
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'container-button__side container-button__side_front' },
-	                _react2.default.createElement(
-	                  'p',
-	                  { className: 'container-button__text' },
-	                  'read more'
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'container-button__side container-button__side_back' },
-	                _react2.default.createElement(
-	                  'p',
-	                  { className: 'container-button__text' },
-	                  'hide'
-	                )
-	              )
-	            )
-	          )
-	        )
-	      );
-	    }
-	  }]);
+				return _react2.default.createElement(
+					'div',
+					{ className: 'container main__container container_first' },
+					_react2.default.createElement(_contentTop2.default, { icon: boxTop.icon, iconBack: boxTop.iconBack, titleBig: boxTop.titleBig }),
+					_react2.default.createElement(_contentMidle2.default, { arr: boxMidle.arr, type: boxMidle.type }),
+					_react2.default.createElement(_contentBottom2.default, { arr: boxBottom.arr, type: boxBottom.type }),
+					_react2.default.createElement('input', { className: 'container-button__checkbox hide', type: 'checkbox', id: 'checkbox_1' }),
+					_react2.default.createElement(_buttonReadMore2.default, { number: '1' })
+				);
+			}
+		}]);
 
-	  return ContentBlockFirst;
+		return ContentBlockFirst;
 	}(_react2.default.Component);
 
 	module.exports = ContentBlockFirst;
@@ -22040,7 +21955,7 @@
 /* 185 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -22056,107 +21971,48 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var ContentBlockSecond = function (_React$Component) {
-			_inherits(ContentBlockSecond, _React$Component);
+	var ContentTop = function (_React$Component) {
+		_inherits(ContentTop, _React$Component);
 
-			function ContentBlockSecond() {
-					_classCallCheck(this, ContentBlockSecond);
+		function ContentTop() {
+			_classCallCheck(this, ContentTop);
 
-					return _possibleConstructorReturn(this, (ContentBlockSecond.__proto__ || Object.getPrototypeOf(ContentBlockSecond)).apply(this, arguments));
+			return _possibleConstructorReturn(this, (ContentTop.__proto__ || Object.getPrototypeOf(ContentTop)).apply(this, arguments));
+		}
+
+		_createClass(ContentTop, [{
+			key: "render",
+			value: function render() {
+				return _react2.default.createElement(
+					"div",
+					{ className: "container__block container__block_top" },
+					_react2.default.createElement(
+						"div",
+						{ className: "container__sphere" },
+						_react2.default.createElement(
+							"div",
+							{ className: "container__icon_front" },
+							_react2.default.createElement("img", { className: "icon container__icon", src: this.props.icon })
+						),
+						_react2.default.createElement(
+							"div",
+							{ className: "container__icon_back" },
+							_react2.default.createElement("img", { className: "icon container__icon", src: this.props.iconBack })
+						)
+					),
+					_react2.default.createElement(
+						"h1",
+						{ className: "container__title" },
+						this.props.titleBig
+					)
+				);
 			}
+		}]);
 
-			_createClass(ContentBlockSecond, [{
-					key: 'render',
-					value: function render() {
-							var boxTop = { icon: 'images/arrow.png', iconBack: 'images/gear.svg', titleBig: 'SUMMARY' };
-							var boxMidle = { text: ' I\'m a creative front-end developer with over one year of experience. I\'m eager to learn and use new technologies as they emerge.' };
-							var boxBottom = { text: 'Reliable and dedicated with the ability to learn quickly and work in a fast paced environment.' };
-
-							var content = [boxTop, boxMidle, boxBottom];
-
-							return _react2.default.createElement(
-									'div',
-									{ className: 'container main__container container_second' },
-									_react2.default.createElement(
-											'div',
-											{ className: 'container__block container__block_top' },
-											_react2.default.createElement(
-													'div',
-													{ className: 'container__sphere' },
-													_react2.default.createElement(
-															'div',
-															{ className: 'container__icon_front' },
-															_react2.default.createElement('img', { className: 'icon container__icon', src: content[0].icon })
-													),
-													_react2.default.createElement(
-															'div',
-															{ className: 'container__icon_back' },
-															_react2.default.createElement('img', { className: 'icon container__icon', src: content[0].iconBack })
-													)
-											),
-											_react2.default.createElement(
-													'h1',
-													{ className: 'container__title' },
-													content[0].titleBig
-											)
-									),
-									_react2.default.createElement(
-											'div',
-											{ className: 'container__block container__block_midle' },
-											_react2.default.createElement(
-													'p',
-													{ className: 'container__text' },
-													content[1].text
-											)
-									),
-									_react2.default.createElement(
-											'div',
-											{ className: 'container__block container__block_bottom hide_size' },
-											_react2.default.createElement(
-													'p',
-													{ className: 'container__text' },
-													content[2].text
-											)
-									),
-									_react2.default.createElement('input', { className: 'container-button__checkbox hide', type: 'checkbox', id: 'checkbox_2' }),
-									_react2.default.createElement(
-											'label',
-											{ htmlFor: 'checkbox_2' },
-											_react2.default.createElement(
-													'div',
-													{ className: 'container-button' },
-													_react2.default.createElement(
-															'div',
-															{ className: 'container-button__sides' },
-															_react2.default.createElement(
-																	'div',
-																	{ className: 'container-button__side container-button__side_front' },
-																	_react2.default.createElement(
-																			'p',
-																			{ className: 'container-button__text' },
-																			'read more'
-																	)
-															),
-															_react2.default.createElement(
-																	'div',
-																	{ className: 'container-button__side container-button__side_back' },
-																	_react2.default.createElement(
-																			'p',
-																			{ className: 'container-button__text' },
-																			'hide'
-																	)
-															)
-													)
-											)
-									)
-							);
-					}
-			}]);
-
-			return ContentBlockSecond;
+		return ContentTop;
 	}(_react2.default.Component);
 
-	module.exports = ContentBlockSecond;
+	module.exports = ContentTop;
 
 /***/ },
 /* 186 */
@@ -22178,153 +22034,85 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var ContactBox = function (_React$Component) {
-	  _inherits(ContactBox, _React$Component);
+	var ContentMidle = function (_React$Component) {
+		_inherits(ContentMidle, _React$Component);
 
-	  function ContactBox() {
-	    _classCallCheck(this, ContactBox);
+		function ContentMidle() {
+			_classCallCheck(this, ContentMidle);
 
-	    return _possibleConstructorReturn(this, (ContactBox.__proto__ || Object.getPrototypeOf(ContactBox)).apply(this, arguments));
-	  }
+			return _possibleConstructorReturn(this, (ContentMidle.__proto__ || Object.getPrototypeOf(ContentMidle)).apply(this, arguments));
+		}
 
-	  _createClass(ContactBox, [{
-	    key: 'render',
-	    value: function render() {
-	      var contactBoxWebsite = { icon: 'images/contactBoxWebsite.png', title: 'Skype:', info: 'jewelrykas' };
-	      var contactBoxPhone = { icon: 'images/contactBoxPhone.png', title: 'Mobile:', info: '+380636190055' };
-	      var contactBoxGit = { icon: 'images/contactBoxGit.png', title: 'GitHub:', info: 'https://github.com/ZeilD' };
-	      var contactBoxEmail = { icon: 'images/contactBoxEmail.png', title: 'Email:', info: 'kasjewelfr@gmail.com' };
+		_createClass(ContentMidle, [{
+			key: '_getContentMidle',
+			value: function _getContentMidle(type) {
+				switch (type) {
+					case 'list':
+						return _react2.default.createElement(
+							'div',
+							{ className: 'container__block container__block_lists' },
+							this.props.arr.map(function (item, i) {
+								return _react2.default.createElement(
+									'ul',
+									{ key: i, className: 'container__list' },
+									item.map(function (item, index) {
+										return _react2.default.createElement(
+											'li',
+											{ key: index, className: 'list__item' },
+											item
+										);
+									})
+								);
+							})
+						);
+						break;
+					case 'text':
+						return _react2.default.createElement(
+							'div',
+							null,
+							_react2.default.createElement(
+								'p',
+								{ className: 'container__text' },
+								this.props.text
+							)
+						);
+						break;
+					case 'article':
+						return _react2.default.createElement(
+							'div',
+							null,
+							_react2.default.createElement(
+								'h3',
+								{ className: 'container__subtitle' },
+								this.props.subtitle
+							),
+							_react2.default.createElement(
+								'p',
+								{ className: 'container__text' },
+								this.props.text
+							)
+						);
+						break;
+					default:
+						// statements_def
+						break;
+				}
+			}
+		}, {
+			key: 'render',
+			value: function render() {
+				return _react2.default.createElement(
+					'div',
+					{ className: 'container__block container__block_midle' },
+					this._getContentMidle(this.props.type)
+				);
+			}
+		}]);
 
-	      var contactBoxs = [contactBoxWebsite, contactBoxPhone, contactBoxGit, contactBoxEmail];
-
-	      return _react2.default.createElement(
-	        'div',
-	        { className: 'contact-box_wrap' },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'contact-box main__contact-box' },
-	          _react2.default.createElement('div', { className: 'contact-box__rope contact-box__rope_back' }),
-	          _react2.default.createElement('div', { className: 'contact-box__bubble-wrapper' }),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'contact-box__circles-wrapper' },
-	            _react2.default.createElement('div', { className: 'contact-box__circle contact-box__circle_top' }),
-	            _react2.default.createElement('div', { className: 'contact-box__circle contact-box__circle_right' }),
-	            _react2.default.createElement('div', { className: 'contact-box__circle contact-box__circle_bottom' }),
-	            _react2.default.createElement('div', { className: 'contact-box__circle contact-box__circle_left' })
-	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'contact-box__sphere' },
-	            _react2.default.createElement('div', { className: 'contact-box__hole' }),
-	            _react2.default.createElement('div', { className: 'contact-box__rope contact-box__rope_front' }),
-	            _react2.default.createElement(
-	              'h1',
-	              { className: 'contact-box__title contact-box__title_big' },
-	              'contact me'
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'contact-box__website-box' },
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'contact-box__sphere_small' },
-	                _react2.default.createElement('img', { className: 'contact-box__icon', src: contactBoxs[0].icon })
-	              ),
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'contact-box__info' },
-	                _react2.default.createElement(
-	                  'h4',
-	                  { className: 'contact-box__title' },
-	                  contactBoxs[0].title
-	                ),
-	                _react2.default.createElement(
-	                  'p',
-	                  { className: 'contact-box__website' },
-	                  contactBoxs[0].info
-	                )
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'contact-box__phone-box' },
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'contact-box__sphere_small' },
-	                _react2.default.createElement('img', { className: 'contact-box__icon', src: contactBoxs[1].icon })
-	              ),
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'contact-box__info' },
-	                _react2.default.createElement(
-	                  'h4',
-	                  { className: 'contact-box__title' },
-	                  contactBoxs[1].title
-	                ),
-	                _react2.default.createElement(
-	                  'p',
-	                  { className: 'contact-box__phone' },
-	                  contactBoxs[1].info
-	                )
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'contact-box__git-box' },
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'contact-box__sphere_small' },
-	                _react2.default.createElement('img', { className: 'contact-box__icon', src: contactBoxs[2].icon })
-	              ),
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'contact-box__info' },
-	                _react2.default.createElement(
-	                  'h4',
-	                  { className: 'contact-box__title' },
-	                  contactBoxs[2].title
-	                ),
-	                _react2.default.createElement(
-	                  'p',
-	                  { className: 'contact-box__git' },
-	                  contactBoxs[2].info
-	                )
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'contact-box__email-box' },
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'contact-box__sphere_small' },
-	                _react2.default.createElement('img', { className: 'contact-box__icon', src: contactBoxs[3].icon })
-	              ),
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'contact-box__info' },
-	                _react2.default.createElement(
-	                  'h4',
-	                  { className: 'contact-box__title' },
-	                  contactBoxs[3].title
-	                ),
-	                _react2.default.createElement(
-	                  'p',
-	                  { className: 'contact-box__email' },
-	                  contactBoxs[3].info
-	                )
-	              )
-	            )
-	          )
-	        )
-	      );
-	    }
-	  }]);
-
-	  return ContactBox;
+		return ContentMidle;
 	}(_react2.default.Component);
 
-	module.exports = ContactBox;
+	module.exports = ContentMidle;
 
 /***/ },
 /* 187 */
@@ -22340,7 +22128,121 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var ContentBottom = function (_React$Component) {
+		_inherits(ContentBottom, _React$Component);
+
+		function ContentBottom() {
+			_classCallCheck(this, ContentBottom);
+
+			return _possibleConstructorReturn(this, (ContentBottom.__proto__ || Object.getPrototypeOf(ContentBottom)).apply(this, arguments));
+		}
+
+		_createClass(ContentBottom, [{
+			key: '_getContentBottom',
+			value: function _getContentBottom(type) {
+				switch (type) {
+					case 'list':
+						return _react2.default.createElement(
+							'div',
+							{ className: 'container__block container__block_lists' },
+							this.props.arr.map(function (item, i) {
+								return _react2.default.createElement(
+									'ul',
+									{ key: i, className: 'container__list' },
+									item.map(function (item, index) {
+										return _react2.default.createElement(
+											'li',
+											{ key: index, className: 'list__item' },
+											item
+										);
+									})
+								);
+							})
+						);
+						break;
+					case 'text':
+						return _react2.default.createElement(
+							'div',
+							null,
+							_react2.default.createElement(
+								'p',
+								{ className: 'container__text' },
+								this.props.text
+							)
+						);
+						break;
+					case 'article':
+						return _react2.default.createElement(
+							'div',
+							null,
+							_react2.default.createElement(
+								'h3',
+								{ className: 'container__subtitle' },
+								this.props.subtitle
+							),
+							_react2.default.createElement(
+								'p',
+								{ className: 'container__text' },
+								this.props.text
+							)
+						);
+						break;
+					default:
+						// statements_def
+						break;
+				}
+			}
+		}, {
+			key: 'render',
+			value: function render() {
+				return _react2.default.createElement(
+					'div',
+					{ className: 'container__block container__block_bottom hide_size' },
+					this._getContentBottom(this.props.type)
+				);
+			}
+		}]);
+
+		return ContentBottom;
+	}(_react2.default.Component);
+
+	module.exports = ContentBottom;
+
+/***/ },
+/* 188 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _contentTop = __webpack_require__(185);
+
+	var _contentTop2 = _interopRequireDefault(_contentTop);
+
+	var _contentMidle = __webpack_require__(186);
+
+	var _contentMidle2 = _interopRequireDefault(_contentMidle);
+
+	var _contentBottom = __webpack_require__(187);
+
+	var _contentBottom2 = _interopRequireDefault(_contentBottom);
+
+	var _buttonReadMore = __webpack_require__(194);
+
+	var _buttonReadMore2 = _interopRequireDefault(_buttonReadMore);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -22348,127 +22250,129 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var ContentBlockThird = function (_React$Component) {
-	  _inherits(ContentBlockThird, _React$Component);
+	var ContentBlockSecond = function (_React$Component) {
+		_inherits(ContentBlockSecond, _React$Component);
 
-	  function ContentBlockThird() {
-	    _classCallCheck(this, ContentBlockThird);
+		function ContentBlockSecond() {
+			_classCallCheck(this, ContentBlockSecond);
 
-	    return _possibleConstructorReturn(this, (ContentBlockThird.__proto__ || Object.getPrototypeOf(ContentBlockThird)).apply(this, arguments));
-	  }
+			return _possibleConstructorReturn(this, (ContentBlockSecond.__proto__ || Object.getPrototypeOf(ContentBlockSecond)).apply(this, arguments));
+		}
 
-	  _createClass(ContentBlockThird, [{
-	    key: 'render',
-	    value: function render() {
-	      var _boxTop;
+		_createClass(ContentBlockSecond, [{
+			key: 'render',
+			value: function render() {
+				var boxTop = { icon: 'images/arrow.png', iconBack: 'images/gear.svg', titleBig: 'SUMMARY' };
+				var boxMidle = { type: 'text', text: ' I\'m a creative front-end developer with over one year of experience. I\'m eager to learn and use new technologies as they emerge.' };
+				var boxBottom = { type: 'text', text: 'Reliable and dedicated with the ability to learn quickly and work in a fast paced environment.' };
 
-	      var boxTop = (_boxTop = { icon: 'images/arrow.png', iconBack: 'images/gear.svg' }, _defineProperty(_boxTop, 'iconBack', 'images/gear.svg'), _defineProperty(_boxTop, 'titleBig', 'Responsibilities'), _boxTop);
-	      var boxMidle = { list1: ['Develop usable websites based on web standards, flexibility and accessibility.', 'Use Avocode and Photoshop for website mockups.', 'Develop layout web applications with Pug and React.js.'] };
-	      var boxBottom = { list1: ['Write simple plugins and animations in JavaScript.', 'Use BEM methodology for making source code more readable and understandable.'] };
+				var content = [];
 
-	      var content = [boxTop, boxMidle, boxBottom];
+				return _react2.default.createElement(
+					'div',
+					{ className: 'container main__container container_second' },
+					_react2.default.createElement(_contentTop2.default, { icon: boxTop.icon, iconBack: boxTop.iconBack, titleBig: boxTop.titleBig }),
+					_react2.default.createElement(_contentMidle2.default, { type: boxMidle.type, text: boxMidle.text }),
+					_react2.default.createElement(_contentBottom2.default, { type: boxBottom.type, text: boxBottom.text }),
+					_react2.default.createElement('input', { className: 'container-button__checkbox hide', type: 'checkbox', id: 'checkbox_2' }),
+					_react2.default.createElement(_buttonReadMore2.default, { number: '2' })
+				);
+			}
+		}]);
 
-	      return _react2.default.createElement(
-	        'div',
-	        { className: 'container main__container container_third' },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'container__block container__block_top' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'container__sphere' },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'container__icon_front' },
-	              _react2.default.createElement('img', { className: 'icon container__icon', src: content[0].icon })
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'container__icon_back' },
-	              _react2.default.createElement('img', { className: 'icon container__icon', src: content[0].iconBack })
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'h1',
-	            { className: 'container__title' },
-	            content[0].titleBig
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'container__block container__block_midle container__block_lists' },
-	          _react2.default.createElement(
-	            'ul',
-	            { className: 'container__list' },
-	            content[1].list1.map(function (item) {
-	              return _react2.default.createElement(
-	                'li',
-	                { className: 'list__item' },
-	                item
-	              );
-	            })
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'container__block container__block_bottom container__block_lists hide_size' },
-	          _react2.default.createElement(
-	            'ul',
-	            { className: 'container__list' },
-	            content[2].list1.map(function (item) {
-	              return _react2.default.createElement(
-	                'li',
-	                { className: 'list__item' },
-	                item
-	              );
-	            })
-	          )
-	        ),
-	        _react2.default.createElement('input', { className: 'container-button__checkbox hide', type: 'checkbox', id: 'checkbox_3' }),
-	        _react2.default.createElement(
-	          'label',
-	          { htmlFor: 'checkbox_3' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'container-button' },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'container-button__sides' },
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'container-button__side container-button__side_front' },
-	                _react2.default.createElement(
-	                  'p',
-	                  { className: 'container-button__text' },
-	                  'read more'
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'container-button__side container-button__side_back' },
-	                _react2.default.createElement(
-	                  'p',
-	                  { className: 'container-button__text' },
-	                  'hide'
-	                )
-	              )
-	            )
-	          )
-	        )
-	      );
-	    }
-	  }]);
-
-	  return ContentBlockThird;
+		return ContentBlockSecond;
 	}(_react2.default.Component);
 
-	module.exports = ContentBlockThird;
+	module.exports = ContentBlockSecond;
 
 /***/ },
-/* 188 */
+/* 189 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _contact = __webpack_require__(190);
+
+	var _contact2 = _interopRequireDefault(_contact);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var ContactBox = function (_React$Component) {
+	    _inherits(ContactBox, _React$Component);
+
+	    function ContactBox() {
+	        _classCallCheck(this, ContactBox);
+
+	        return _possibleConstructorReturn(this, (ContactBox.__proto__ || Object.getPrototypeOf(ContactBox)).apply(this, arguments));
+	    }
+
+	    _createClass(ContactBox, [{
+	        key: 'render',
+	        value: function render() {
+	            var contactBoxWebsite = { name: 'website', icon: 'images/contactBoxWebsite.png', title: 'Skype:', info: 'jewelrykas' };
+	            var contactBoxPhone = { name: 'phone', icon: 'images/contactBoxPhone.png', title: 'Mobile:', info: '+380636190055' };
+	            var contactBoxGit = { name: 'git', icon: 'images/contactBoxGit.png', title: 'GitHub:', info: 'https://github.com/ZeilD' };
+	            var contactBoxEmail = { name: 'email', icon: 'images/contactBoxEmail.png', title: 'Email:', info: 'kasjewelfr@gmail.com' };
+
+	            var contactBoxs = [contactBoxWebsite, contactBoxPhone, contactBoxGit, contactBoxEmail];
+
+	            return _react2.default.createElement(
+	                'div',
+	                { className: 'contact-box_wrap' },
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'contact-box main__contact-box' },
+	                    _react2.default.createElement('div', { className: 'contact-box__rope contact-box__rope_back' }),
+	                    _react2.default.createElement('div', { className: 'contact-box__bubble-wrapper' }),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'contact-box__circles-wrapper' },
+	                        _react2.default.createElement('div', { className: 'contact-box__circle contact-box__circle_top' }),
+	                        _react2.default.createElement('div', { className: 'contact-box__circle contact-box__circle_right' }),
+	                        _react2.default.createElement('div', { className: 'contact-box__circle contact-box__circle_bottom' }),
+	                        _react2.default.createElement('div', { className: 'contact-box__circle contact-box__circle_left' })
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'contact-box__sphere' },
+	                        _react2.default.createElement('div', { className: 'contact-box__hole' }),
+	                        _react2.default.createElement('div', { className: 'contact-box__rope contact-box__rope_front' }),
+	                        _react2.default.createElement(
+	                            'h1',
+	                            { className: 'contact-box__title contact-box__title_big' },
+	                            'contact me'
+	                        ),
+	                        contactBoxs.map(function (contact, index) {
+	                            return _react2.default.createElement(_contact2.default, { key: index, name: contact.name, icon: contact.icon, title: contact.title, info: contact.info });
+	                        })
+	                    )
+	                )
+	            );
+	        }
+	    }]);
+
+	    return ContactBox;
+	}(_react2.default.Component);
+
+	module.exports = ContactBox;
+
+/***/ },
+/* 190 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
 
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -22484,120 +22388,197 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+	var Contact = function (_React$Component) {
+		_inherits(Contact, _React$Component);
+
+		function Contact() {
+			_classCallCheck(this, Contact);
+
+			return _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).apply(this, arguments));
+		}
+
+		_createClass(Contact, [{
+			key: "render",
+			value: function render() {
+				return _react2.default.createElement(
+					"div",
+					{ className: "contact-box__" + this.props.name + "-box" },
+					_react2.default.createElement(
+						"div",
+						{ className: "contact-box__sphere_small" },
+						_react2.default.createElement("img", { className: "contact-box__icon", src: this.props.icon })
+					),
+					_react2.default.createElement(
+						"div",
+						{ className: "contact-box__info" },
+						_react2.default.createElement(
+							"h4",
+							{ className: "contact-box__title" },
+							this.props.title
+						),
+						_react2.default.createElement(
+							"p",
+							{ className: "contact-box__" + this.props.name },
+							this.props.info
+						)
+					)
+				);
+			}
+		}]);
+
+		return Contact;
+	}(_react2.default.Component);
+
+	module.exports = Contact;
+
+/***/ },
+/* 191 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _contentTop = __webpack_require__(185);
+
+	var _contentTop2 = _interopRequireDefault(_contentTop);
+
+	var _contentMidle = __webpack_require__(186);
+
+	var _contentMidle2 = _interopRequireDefault(_contentMidle);
+
+	var _contentBottom = __webpack_require__(187);
+
+	var _contentBottom2 = _interopRequireDefault(_contentBottom);
+
+	var _buttonReadMore = __webpack_require__(194);
+
+	var _buttonReadMore2 = _interopRequireDefault(_buttonReadMore);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var ContentBlockThird = function (_React$Component) {
+		_inherits(ContentBlockThird, _React$Component);
+
+		function ContentBlockThird() {
+			_classCallCheck(this, ContentBlockThird);
+
+			return _possibleConstructorReturn(this, (ContentBlockThird.__proto__ || Object.getPrototypeOf(ContentBlockThird)).apply(this, arguments));
+		}
+
+		_createClass(ContentBlockThird, [{
+			key: 'render',
+			value: function render() {
+				var _boxTop;
+
+				var boxTop = (_boxTop = { icon: 'images/arrow.png', iconBack: 'images/gear.svg' }, _defineProperty(_boxTop, 'iconBack', 'images/gear.svg'), _defineProperty(_boxTop, 'titleBig', 'Responsibilities'), _boxTop);
+				var boxMidle = { type: 'list', arr: [['Develop usable websites based on web standards, flexibility and accessibility.', 'Use Avocode and Photoshop for website mockups.', 'Develop layout web applications with Pug and React.js.']] };
+				var boxBottom = { type: 'list', arr: [['Write simple plugins and animations in JavaScript.', 'Use BEM methodology for making source code more readable and understandable.']] };
+
+				var content = [];
+
+				return _react2.default.createElement(
+					'div',
+					{ className: 'container main__container container_third' },
+					_react2.default.createElement(_contentTop2.default, { icon: boxTop.icon, iconBack: boxTop.iconBack, titleBig: boxTop.titleBig }),
+					_react2.default.createElement(_contentMidle2.default, { arr: boxMidle.arr, type: boxMidle.type }),
+					_react2.default.createElement(_contentBottom2.default, { arr: boxBottom.arr, type: boxBottom.type }),
+					_react2.default.createElement('input', { className: 'container-button__checkbox hide', type: 'checkbox', id: 'checkbox_3' }),
+					_react2.default.createElement(_buttonReadMore2.default, { number: '3' })
+				);
+			}
+		}]);
+
+		return ContentBlockThird;
+	}(_react2.default.Component);
+
+	module.exports = ContentBlockThird;
+
+/***/ },
+/* 192 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _contentTop = __webpack_require__(185);
+
+	var _contentTop2 = _interopRequireDefault(_contentTop);
+
+	var _contentMidle = __webpack_require__(186);
+
+	var _contentMidle2 = _interopRequireDefault(_contentMidle);
+
+	var _contentBottom = __webpack_require__(187);
+
+	var _contentBottom2 = _interopRequireDefault(_contentBottom);
+
+	var _buttonReadMore = __webpack_require__(194);
+
+	var _buttonReadMore2 = _interopRequireDefault(_buttonReadMore);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
 	var ContentBlockFourth = function (_React$Component) {
-	  _inherits(ContentBlockFourth, _React$Component);
+		_inherits(ContentBlockFourth, _React$Component);
 
-	  function ContentBlockFourth() {
-	    _classCallCheck(this, ContentBlockFourth);
+		function ContentBlockFourth() {
+			_classCallCheck(this, ContentBlockFourth);
 
-	    return _possibleConstructorReturn(this, (ContentBlockFourth.__proto__ || Object.getPrototypeOf(ContentBlockFourth)).apply(this, arguments));
-	  }
+			return _possibleConstructorReturn(this, (ContentBlockFourth.__proto__ || Object.getPrototypeOf(ContentBlockFourth)).apply(this, arguments));
+		}
 
-	  _createClass(ContentBlockFourth, [{
-	    key: 'render',
-	    value: function render() {
-	      var boxTop = { icon: 'images/arrow.png', iconBack: 'images/gear.svg', titleBig: 'Education' };
-	      var boxMidle = { subtitle: 'Course Front-end pro', text: 'September 2016 - January 2017	Hillel IT School, Odessa' };
-	      var boxBottom = { subtitle: 'Diploma - Enterprise economy', text: 'September 2011 - June 2015	ONAFT (Odessa National Academy Food Technologies)' };
+		_createClass(ContentBlockFourth, [{
+			key: 'render',
+			value: function render() {
+				var boxTop = { icon: 'images/arrow.png', iconBack: 'images/gear.svg', titleBig: 'Education' };
+				var boxMidle = { type: 'article', subtitle: 'Course Front-end pro', text: 'September 2016 - January 2017	Hillel IT School, Odessa' };
+				var boxBottom = { type: 'article', subtitle: 'Diploma - Enterprise economy', text: 'September 2011 - June 2015	ONAFT (Odessa National Academy Food Technologies)' };
 
-	      var content = [boxTop, boxMidle, boxBottom];
+				var content = [];
 
-	      return _react2.default.createElement(
-	        'div',
-	        { className: 'container main__container container_fourth' },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'container__block container__block_top' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'container__sphere' },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'container__icon_front' },
-	              _react2.default.createElement('img', { className: 'icon container__icon', src: content[0].icon })
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'container__icon_back' },
-	              _react2.default.createElement('img', { className: 'icon container__icon', src: content[0].iconBack })
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'h1',
-	            { className: 'container__title' },
-	            content[0].titleBig
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'container__block container__block_midle' },
-	          _react2.default.createElement(
-	            'h3',
-	            { className: 'container__subtitle' },
-	            content[1].subtitle
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            { className: 'container__text' },
-	            content[1].text
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'container__block container__block_bottom hide_size' },
-	          _react2.default.createElement(
-	            'h3',
-	            { className: 'container__subtitle' },
-	            content[2].subtitle
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            { className: 'container__text' },
-	            content[2].text
-	          )
-	        ),
-	        _react2.default.createElement('input', { className: 'container-button__checkbox hide', type: 'checkbox', id: 'checkbox_4' }),
-	        _react2.default.createElement(
-	          'label',
-	          { htmlFor: 'checkbox_4' },
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'container-button' },
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'container-button__sides' },
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'container-button__side container-button__side_front' },
-	                _react2.default.createElement(
-	                  'p',
-	                  { className: 'container-button__text' },
-	                  'read more'
-	                )
-	              ),
-	              _react2.default.createElement(
-	                'div',
-	                { className: 'container-button__side container-button__side_back' },
-	                _react2.default.createElement(
-	                  'p',
-	                  { className: 'container-button__text' },
-	                  'hide'
-	                )
-	              )
-	            )
-	          )
-	        )
-	      );
-	    }
-	  }]);
+				return _react2.default.createElement(
+					'div',
+					{ className: 'container main__container container_fourth' },
+					_react2.default.createElement(_contentTop2.default, { icon: boxTop.icon, iconBack: boxTop.iconBack, titleBig: boxTop.titleBig }),
+					_react2.default.createElement(_contentMidle2.default, { type: boxMidle.type, subtitle: boxMidle.subtitle, text: boxMidle.text }),
+					_react2.default.createElement(_contentBottom2.default, { type: boxBottom.type, subtitle: boxBottom.subtitle, text: boxBottom.text }),
+					_react2.default.createElement('input', { className: 'container-button__checkbox hide', type: 'checkbox', id: 'checkbox_4' }),
+					_react2.default.createElement(_buttonReadMore2.default, { number: '4' })
+				);
+			}
+		}]);
 
-	  return ContentBlockFourth;
+		return ContentBlockFourth;
 	}(_react2.default.Component);
 
 	module.exports = ContentBlockFourth;
 
 /***/ },
-/* 189 */
+/* 193 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -22650,6 +22631,76 @@
 	}(_react2.default.Component);
 
 	module.exports = Footer;
+
+/***/ },
+/* 194 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var ButtonReadMore = function (_React$Component) {
+	  _inherits(ButtonReadMore, _React$Component);
+
+	  function ButtonReadMore() {
+	    _classCallCheck(this, ButtonReadMore);
+
+	    return _possibleConstructorReturn(this, (ButtonReadMore.__proto__ || Object.getPrototypeOf(ButtonReadMore)).apply(this, arguments));
+	  }
+
+	  _createClass(ButtonReadMore, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "label",
+	        { htmlFor: "checkbox_" + this.props.number },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "container-button" },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "container-button__sides" },
+	            _react2.default.createElement(
+	              "div",
+	              { className: "container-button__side container-button__side_front" },
+	              _react2.default.createElement(
+	                "p",
+	                { className: "container-button__text" },
+	                "read more"
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "div",
+	              { className: "container-button__side container-button__side_back" },
+	              _react2.default.createElement(
+	                "p",
+	                { className: "container-button__text" },
+	                "hide"
+	              )
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return ButtonReadMore;
+	}(_react2.default.Component);
+
+	module.exports = ButtonReadMore;
 
 /***/ }
 /******/ ]);
