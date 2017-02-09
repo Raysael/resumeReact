@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="style.css?ver=1.0.1">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="font-awesome.min.css">
+	<link rel="stylesheet" href="style.css?ver=1.1.0">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans:300,400,700" rel="stylesheet">
 	<title>RESUME</title>
 </head>
 <body>
 	<div id="app"></div>
-	<script src="bundle.js?ver=1.1.0"></script>
+	<script src="bundle.js?ver=1.2.0"></script>
 	<script>
     //удаление рекламы хостинга после футера
     if (document.body.querySelector('.cbalink'))
@@ -29,12 +30,14 @@ function Clicker(argument) {
     }
 
     function chekSize(e) {
-        var elem = e.parentElement.children
+        var elem = e.parentElement
     	
-        if (elem[3].checked)
-    		elem[2].classList.remove('hide_size')
-    	else
-    		elem[2].classList.add('hide_size')
+        if (elem.children[3].checked) {
+          elem.classList.add('hide_size')
+        }
+      	else {
+      		elem.classList.remove('hide_size')
+        }
     }
 }
 

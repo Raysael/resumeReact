@@ -1,0 +1,41 @@
+.footer {
+	background: url("images/footer.png") left -2.5vw no-repeat;
+	background-size: cover;
+	box-sizing: border-box;
+	height: 413px / $width * 100vw;
+	position: relative;
+	&__photo {
+		background: url("images/photo.gif") left top no-repeat;
+		background-size: cover;
+		width: 700px/ $width * 100vw;
+		height: 670px/ $width * 100vw;
+		bottom: -0.3vw;
+		left: 35.2vw;
+		position: absolute;
+		z-index: 1;
+	}
+	&__copyright {
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background-color: #413B39;
+	}
+	&__text {
+		color: #fff;
+		text-align: center;
+		padding: 0.5vw;
+		font-size: 1.25vw;
+	}
+	&__shadow {
+		width: 12vw;
+	    height: 5vw;
+	    background: #1C1C1C;
+	    position: absolute;
+	    bottom: 1vw;
+	    left: 42vw;
+	    z-index: 0;
+	    border-radius: 50% 50%;
+	    box-shadow: 0 0 1vw 1vw #1C1C1C;
+	}
+}
