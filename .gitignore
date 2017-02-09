@@ -1,2 +1,7 @@
 node_modules
 public
+dev
+app
+gulpfile.js
+package.json
+webpack.config.js

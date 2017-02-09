@@ -28,11 +28,12 @@ class ContentBottom extends React.Component {
 		}
 	render() {
 		return(
-			<div className="container__block container__block_bottom hide_size">
+			<div className="container__block container__block_bottom">
 	           {this._getContentBottom(this.props.type)}
 	        </div>
 		)
 	}
 }
+
 
 module.exports = ContentBottom;

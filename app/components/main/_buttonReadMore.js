@@ -3,7 +3,7 @@ import React from 'react';
 class ButtonReadMore extends React.Component {
 	render() {
 		return(
-			<label htmlFor={"checkbox_" + this.props.number}>
+			<label htmlFor={"checkbox_" + this.props.number} onClick={this.props.cliker}>
             <div className="container-button">
               <div className="container-button__sides">
                 <div className="container-button__side container-button__side_front"> 
