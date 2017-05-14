@@ -4,9 +4,9 @@ import Contact from './_contact.js';
 class ContactBox extends React.Component {
 	render() {
 		let contactBoxWebsite = {name: 'website', icon: 'fa fa-skype', title: 'Skype:', info: 'jewelrykas'}
-    let contactBoxPhone = {name: 'phone', icon: 'fa fa-mobile', title: 'Mobile:', info: '+380636190055'}
-    let contactBoxGit = {name: 'git', icon: 'fa fa-github', title: 'GitHub:', info: 'https://github.com/ZeilD'}
-    let contactBoxEmail = {name: 'email', icon: 'fa fa-envelope', title: 'Email:', info: 'kasjewelfr@gmail.com'}
+        let contactBoxPhone = {name: 'phone', icon: 'fa fa-mobile', title: 'Mobile:', info: '+380636190055'}
+        let contactBoxGit = {name: 'git', icon: 'fa fa-github', title: 'GitHub:', info: 'https://github.com/ZeilD'}
+        let contactBoxEmail = {name: 'email', icon: 'fa fa-envelope', title: 'Email:', info: 'kasjewelfr@gmail.com'}
 
 		let contactBoxs = [contactBoxWebsite, contactBoxPhone, contactBoxGit, contactBoxEmail]
 		

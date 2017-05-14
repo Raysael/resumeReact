@@ -19,7 +19,7 @@ class ContentBlockSecond extends React.Component {
   	}
 	render() {
 		let boxTop = {icon: 'images/arrow.png', iconBack: 'images/gear.svg', titleBig: 'SUMMARY'}
-		let boxMidle = {type: 'text', text: ' I\'m a creative front-end developer with over one year of experience. I\'m eager to learn and use new technologies as they emerge.'}
+		let boxMidle = {type: 'text', text: ' I\'m a creative front-end developer with over one year of experience. I\'m interested in learning new modern technologies for implementing them in my projects.'}
 		let boxBottom = {type: 'text', text: 'Reliable and dedicated with the ability to learn quickly and work in a fast paced environment.'}
 
 		let content = []

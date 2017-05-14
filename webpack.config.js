@@ -1,6 +1,6 @@
 module.exports = {
 	entry: './app/components/App.js',
-	output: {filename: 'public/bundle.js'},
+	output: {filename: 'prepublic/bundle.js'},
 	module: {
 		loaders: [
 			{
